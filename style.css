@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+/* Start Variables */
+:root {
+  --body-color: hsl(185, 75%, 39%);
+  --primary-color: hsl(229, 23%, 23%);
+  --secondry-color: hsl(227, 10%, 46%);
+  --third-color: hsl(0, 0%, 59%);
+  --white-color: white;
+}
+/* End Variables */
+/* Start Global Rules */
+:is(*, *::before, *::after) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background-image: url(img/bg-pattern-top.svg), url(img/bg-pattern-bottom.svg);
+  background-position: -45% 70%, 130% -75%;
+  background-repeat: no-repeat;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+h1,
+p {
+  color: var(--primary-color);
+  margin: 0;
+}
+h2,
+span {
+  color: var(--secondry-color);
+}
+/* End Global Rules */
+
+.profile-card {
+  background-color: var(--white-color);
+  /* height: ; */
+  border-radius: 15px;
+  text-align: center;
+}
+.profile-card .profile-card__card-banner img.card-profile__card-banner-img {
+  border-radius: 15px 15px 0 0;
+}
+.profile-card .profile-card__card-img-container img.profile-card__card-img {
+  display: flex;
+  border: 5px solid var(--white-color);
+  border-radius: 50%;
+  margin: -15% auto 0;
+}
+.profile-card .profile-card__card-user-info h1.profile-card__card-username {
+  font-size: 23px;
+  margin-block: 22px 10px;
+}
+.profile-card .profile-card__card-user-info h1.profile-card__card-username span.profile-card__card-age {
+  margin-left: 5px;
+  color: var(--third-color);
+}
+.profile-card .profile-card__card-user-info address.profile-card__card-address {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--third-color);
+}
+.profile-card .profile-card__card-user-data {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--third-color);
+  margin-top: 27px;
+  padding: 25px 30px 25px;
+}
+.profile-card .profile-card__card-user-data .profile-card__card-data h2.profile-card__card-user-data-catagorie {
+  color: var(--third-color);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.profile-card .profile-card__card-user-data .profile-card__card-data p.profile-card__card-user-data-number {
+  color: var(--primary-color);
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
